@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio -THIERNO AMADOU LY</title>
+  <title>Portfolio - THIERNO AMADOU LY</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#3b82f6'
+            primary: '#10b981', /* vert émeraude */
+            secondary: '#3b82f6' /* bleu moderne */
           }
         }
       }
@@ -20,170 +21,162 @@
 
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- Header / Navigation -->
-  <header class="sticky top-0 bg-white shadow-sm z-50">
+  <header class="sticky top-0 bg-white shadow-md z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-primary">// TON NOM</h1>
-      
-      <!-- Desktop Menu -->
+      <h1 class="text-2xl font-bold text-primary">THIERNO AMADOU LY</h1>
       <ul class="hidden md:flex space-x-6 font-medium">
-        <li><a href="#about" class="hover:text-primary transition">À propos</a></li>
-        <li><a href="#formation" class="hover:text-primary transition">Formation</a></li>
-        <li><a href="#experience" class="hover:text-primary transition">Expériences</a></li>
-        <li><a href="#skills" class="hover:text-primary transition">Compétences</a></li>
-        <li><a href="#projects" class="hover:text-primary transition">Projets</a></li>
-        <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
+        <li><a href="#about" class="hover:text-secondary transition">À propos</a></li>
+        <li><a href="#formation" class="hover:text-secondary transition">Formation</a></li>
+        <li><a href="#experience" class="hover:text-secondary transition">Expériences</a></li>
+        <li><a href="#skills" class="hover:text-secondary transition">Compétences</a></li>
+        <li><a href="#projects" class="hover:text-secondary transition">Projets</a></li>
+        <li><a href="#contact" class="hover:text-secondary transition">Contact</a></li>
       </ul>
-
-      <!-- Mobile Menu Button -->
       <button id="menu-btn" class="md:hidden">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </nav>
-
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
-      <a href="#about" class="block py-2 hover:text-primary">À propos</a>
-      <a href="#formation" class="block py-2 hover:text-primary">Formation</a>
-      <a href="#experience" class="block py-2 hover:text-primary">Expériences</a>
-      <a href="#skills" class="block py-2 hover:text-primary">Compétences</a>
-      <a href="#projects" class="block py-2 hover:text-primary">Projets</a>
-      <a href="#contact" class="block py-2 hover:text-primary">Contact</a>
+      <a href="#about" class="block py-2 hover:text-secondary">À propos</a>
+      <a href="#formation" class="block py-2 hover:text-secondary">Formation</a>
+      <a href="#experience" class="block py-2 hover:text-secondary">Expériences</a>
+      <a href="#skills" class="block py-2 hover:text-secondary">Compétences</a>
+      <a href="#projects" class="block py-2 hover:text-secondary">Projets</a>
+      <a href="#contact" class="block py-2 hover:text-secondary">Contact</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+  <section class="bg-gradient-to-r from-green-500 to-blue-600 text-white py-20">
     <div class="container mx-auto px-6 text-center">
-      <img src="// TON LIEN PHOTO" alt="Photo" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white">
+      <img src="c:\Users\UNCHK\Downloads\WhatsApp Image 2026-05-17 at 10.23.09 AM.jpeg" alt="Photo" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white">
       <h2 class="text-4xl md:text-5xl font-bold mb-4">Salut, je suis THIERNO AMADOU LY</h2>
       <p class="text-xl md:text-2xl mb-8">Développeur Frontend passionné</p>
       <div class="space-x-4">
-        <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Voir mes projets</a>
-        <a href="#contact" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">Me contacter</a>
+        <a href="#projects" class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Voir mes projets</a>
+        <a href="#contact" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition">Me contacter</a>
       </div>
     </div>
   </section>
 
-  <!-- À propos -->
   <section id="about" class="py-16 container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-8">À propos de moi</h2>
     <p class="text-lg text-center max-w-3xl mx-auto leading-relaxed">
-      // Écris 3-4 lignes sur toi : passion pour le dev, objectif, ce qui te différencie.
-      Étudiant en informatique, je crée des interfaces web modernes et performantes avec Tailwind CSS et JavaScript.
+      Passionné par le développement web, j’aime transformer des idées en sites et applications concrètes.  
+      Mon objectif est de devenir fullstack solide, capable de gérer le front, le back et le déploiement.  
+      Je crée des interfaces modernes et performantes avec Tailwind CSS et JavaScript.
     </p>
   </section>
 
-  <!-- Formation -->
   <section id="formation" class="py-16 bg-gray-100">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-8">Formation</h2>
       <div class="max-w-2xl mx-auto space-y-6">
         <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold">Licence Informatique</h3>
-          <p class="text-gray-600">// Université - 2024/2026</p>
+          <h3 class="text-xl font-semibold">Licence 2 Génie Informatique</h3>
+          <p class="text-gray-600">Université Professionnelle - 2024/2026</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Expériences -->
   <section id="experience" class="py-16 container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-8">Expériences</h2>
     <div class="max-w-2xl mx-auto space-y-6">
       <div class="border-l-4 border-primary pl-6">
-        <h3 class="text-xl font-semibold">// Poste</h3>
-        <p class="text-gray-600">// Entreprise - Date</p>
-        <p class="mt-2">// Description courte de ce que tu as fait</p>
+        <h3 class="text-xl font-semibold">Stagiaire</h3>
+        <p class="text-gray-600">KEOPS TECH en Juillet 2025</p>
+        <p class="mt-2">Création de sites web avec WordPress et initiation aux bases de Python.</p>
       </div>
     </div>
   </section>
 
-  <!-- Compétences -->
   <section id="skills" class="py-16 bg-gray-100">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-8">Compétences</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition">
-          <p class="font-semibold">HTML</p>
+        
+        <!-- HTML -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="font-semibold mb-4">HTML</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML" class="w-16 h-16 mx-auto">
         </div>
-        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition">
-          <p class="font-semibold">CSS / Tailwind</p>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="font-semibold mb-4">CSS / Tailwind</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Logo Tailwind" class="w-16 h-16 mx-auto">
         </div>
-        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition">
-          <p class="font-semibold">JavaScript</p>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="font-semibold mb-4">JavaScript</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo JavaScript" class="w-16 h-16 mx-auto">
         </div>
-        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition">
-          <p class="font-semibold">Git & GitHub</p>
+    
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="font-semibold mb-4">Git & GitHub</p>
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" class="w-16 h-16 mx-auto">
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Projets -->
-  <section id="projects" class="py-16 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-8">Mes Projets</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      
-      <!-- Projet 1 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-        <img src="// IMAGE PROJET 1" alt="Projet 1" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">// Nom du projet</h3>
-          <p class="text-gray-600 mb-4">// Description courte du projet</p>
-          <p class="text-sm text-gray-500 mb-4">Techno: HTML, Tailwind, JS</p>
-          <div class="space-x-4">
-            <a href="// LIEN GITHUB" class="text-primary font-semibold hover:underline">GitHub</a>
-            <a href="// LIEN DEMO" class="text-primary font-semibold hover:underline">Demo</a>
-          </div>
+<section id="projects" class="py-16 container mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center mb-8">Mes Projets</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+    
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      <img src="https://images.unsplash.com/photo-1581090700227-4c4f7a3b0c9a" alt="Projet Portfolio" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Portfolio Professionnel</h3>
+        <p class="text-gray-600 mb-4">
+          Réalisation d’un site vitrine moderne pour présenter mes compétences, mon parcours et mes projets.  
+          Utilisation de HTML, Tailwind CSS et JavaScript pour un design responsive et performant.
+        </p>
+        <p class="text-sm text-gray-500 mb-4">Techno: HTML, Tailwind, JS</p>
+        <div class="space-x-4">
+          <a href="https://github.com/thierno-ly/portfolio" class="text-primary font-semibold hover:underline">GitHub</a>
+          <a href="https://thierno-ly-portfolio.netlify.app" class="text-primary font-semibold hover:underline">Demo</a>
         </div>
       </div>
+    </div>
 
-      <!-- Projet 2 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-        <img src="// IMAGE PROJET 2" alt="Projet 2" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">// Nom du projet</h3>
-          <p class="text-gray-600 mb-4">// Description courte du projet</p>
-          <p class="text-sm text-gray-500 mb-4">Techno: HTML, Tailwind, JS</p>
-          <div class="space-x-4">
-            <a href="// LIEN GITHUB" class="text-primary font-semibold hover:underline">GitHub</a>
-            <a href="// LIEN DEMO" class="text-primary font-semibold hover:underline">Demo</a>
-          </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Projet To-Do" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Application To-Do List</h3>
+        <p class="text-gray-600 mb-4">
+          Développement d’une application web simple pour gérer ses tâches quotidiennes.  
+          Fonctionnalités : ajout, suppression et sauvegarde locale des tâches.
+        </p>
+        <p class="text-sm text-gray-500 mb-4">Techno: HTML, CSS, JS</p>
+        <div class="space-x-4">
+          <a href="https://github.com/thierno-ly/todo-app" class="text-primary font-semibold hover:underline">GitHub</a>
+          <a href="https://thierno-ly-todo.netlify.app" class="text-primary font-semibold hover:underline">Demo</a>
         </div>
       </div>
-
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-8">Contactez-moi</h2>
-      <p class="text-lg mb-6">Ouvert aux opportunités et collaborations</p>
-      <div class="flex justify-center space-x-6">
-        <a href="mailto:// TON MAIL" class="text-primary hover:underline">Email</a>
-        <a href="// TON GITHUB" class="text-primary hover:underline">GitHub</a>
-        <a href="// TON LINKEDIN" class="text-primary hover:underline">LinkedIn</a>
-      </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-8">Contactez-moi</h2>
+    <p class="text-lg mb-6">Ouvert aux opportunités et collaborations</p>
+
+    <form action="mailto:thierno.amadou.ly@example.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto space-y-4">
+      <input type="text" name="Nom" placeholder="Votre nom" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+      <input type="email" name="Email" placeholder="Votre email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+      <textarea name="Message" rows="5" placeholder="Votre message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+      <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">Envoyer</button>
+    </form>
+
+    <div class="flex justify-center space-x-6 mt-8">
+      <a href="mailto:Lamadou759@gmail.com" class="text-secondary hover:underline">📧 Email</a>
+      <a href="https://github.com/thierno-91github.com/" class="text-secondary hover:underline">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/thierno-ly" class="text-secondary hover:underline">🔗 LinkedIn</a>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; 2025 THIERNO AMADOU LY. Tous droits réservés.</p>
-  </footer>
-
-  <!-- Script menu mobile -->
-  <script>
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
-
-</body>
-</html>
+  </div>
+</section>
